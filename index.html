@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Monblanproject</title>
+    <link rel="stylesheet" href="./libs/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="./build/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4">
+                    <div class="logo">
+                        <img src="./build/img/logo.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8">
+                    <div class="profile">
+                        <div class="profile-info">
+                            <div class="profile-info--name">
+                                <h3>monblanproject</h3>
+                            </div>
+                            <div class="profile-info--button">
+                                <input type="button" value="Start on 17-02-2016">
+                            </div>
+                        </div>
+                        <div class="profile-stats">
+                            <div class="profile-stats--posts"><span>870</span> posts</div>
+                            <div class="profile-stats--followers"><span>11,787</span> followers</div>
+                            <div class="profile-stats--following"><span>112</span> following</div>
+                        </div>
+                        <div class="datepicker">
+                            <div class="dates">
+                                <label for="">Date</label>
+                                <input type="text" autocomplete="off" id='datepickerFrom' class="form-control"
+                                    placeholder="from">
+                                <button type="button" class="clear-button" id="clearButtonFrom"></button>
+                                <button type="button" class="show-button" id="showButtonFrom"></button>
+
+                                <input type="text" autocomplete="off" id='datepickerTo' class="form-control"
+                                    placeholder="to">
+                                <button type="button" class="clear-button" id="clearButtonTo"></button>
+                                <button type="button" class="show-button" id="showButtonTo"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="image-upload">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-4 image-upload-wrapp">
+                        <div class="img-box">
+                            <img src="./build/img/img-1.png" class="thumbnail" alt="">
+                            
+                             <div class="img-box--info">
+                                <div class="row">
+                                    <span class="day-name">Today</span>
+                                    <span class="likes">128</span>
+                                    <span class="comments">31</span>
+                                </div>
+                                <div class="row">
+                                    <span class="date">9-08-2016</span>
+                                    <span class="likes">128</span>
+                                    <span class="comments">31</span>
+                                </div>
+                                <div class="row">
+                                        <div class="upload-date mt-4">
+                                            <p>Image upload: 11-04-2016 </p>
+                                        </div>
+                                    </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 image-upload-wrapp">
+                        <div class="img-box">
+                            <img src="./build/img/img-2.png" alt="">
+                            <div class="img-box--info">
+                                <div class="row">
+                                    <span class="day-name">Today</span>
+                                    <span class="likes">12,800</span>
+                                    <span class="comments">3,100</span>
+                                </div>
+                                <div class="row">
+                                    <span class="date">9-08-2016</span>
+                                    <span class="likes">128</span>
+                                    <span class="comments ml-4">31</span>
+                                </div>
+                                <div class="row">
+                                        <div class="upload-date mt-4">
+                                            <p>Image upload: 11-04-2016 </p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 image-upload-wrapp">
+                        <div class="img-box">
+                            
+                            <img src="./build/img/img-3.png" alt="">
+                            <div class="img-box--info">
+                                <span class="video-item"></span>
+                                <div class="row">
+                                    <span class="day-name">Today</span>
+                                    <span class="likes">128</span>
+                                    <span class="comments">31</span>
+                                </div>
+                                <div class="row">
+                                    <span class="date">9-08-2016</span>
+                                    <span class="play">128</span>
+                                    <span class="comments">31</span>
+                                </div>
+                                <div class="row">
+                                        <div class="upload-date mt-4">
+                                            <p>Image upload: 11-04-2016 </p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 image-upload-wrapp">
+                        <div class="img-box">
+                            <img src="./build/img/img-4.png" alt="">
+                            <div class="img-box--info">
+                                <div class="row">
+                                    <span class="day-name">Today</span>
+                                    <span class="likes">128</span>
+                                    <span class="comments">31</span>
+                                </div>
+                                <div class="row">
+                                    <span class="date">9-08-2016</span>
+                                    <span class="likes">128</span>
+                                    <span class="comments">31</span>
+                                </div>
+                                <div class="row">
+                                        <div class="upload-date">
+                                            <p>Image upload: 11-04-2016 </p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 image-upload-wrapp">
+                        <div class="img-box">
+                            <img src="./build/img/img-5.png" alt="">
+                            
+                            <div class="img-box--info">
+                                    <span class="video-item"></span>
+                                <div class="row">
+                                    <span class="day-name">Today</span>
+                                    <span class="play">128</span>
+                                    <span class="comments">31</span>
+                                </div>
+                                <div class="row">
+                                    <span class="date">9-08-2016</span>
+                                    <span class="play">128</span>
+                                    <span class="comments">31</span>
+                                </div>
+                                <div class="row">
+                                        <div class="upload-date">
+                                            <p>Image upload: 11-04-2016 </p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 image-upload-wrapp">
+                        <div class="img-box">
+                            <img src="./build/img/img-6.png" alt="">
+                            <div class="img-box--info">
+                                <div class="row">
+                                    <span class="day-name">Today</span>
+                                    <span class="likes">128</span>
+                                    <span class="comments">31</span>
+                                </div>
+                                <div class="row">
+                                    <span class="date">9-08-2016</span>
+                                    <span class="likes">128</span>
+                                    <span class="comments">31</span>
+                                </div>
+                                <div class="row">
+                                        <div class="upload-date">
+                                            <p>Image upload: 11-04-2016 </p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 image-upload-wrapp">
+                        <div class="img-box">
+                            <img src="./build/img/img-7.png" alt="">
+                            <div class="img-box--info">
+                                <div class="row">
+                                    <span class="day-name">Today</span>
+                                    <span class="likes">128</span>
+                                    <span class="comments">31</span>
+                                </div>
+                                <div class="row">
+                                    <span class="date">9-08-2016</span>
+                                    <span class="likes">128</span>
+                                    <span class="comments">31</span>
+                                </div>
+                                <div class="row">
+                                        <div class="upload-date">
+                                            <p>Image upload: 11-04-2016 </p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 image-upload-wrapp">
+                        <div class="img-box">
+                            <img src="./build/img/img-8.png" alt="">
+                            <div class="img-box--info">
+                                <div class="row">
+                                    <span class="day-name day-name_mr"></span>
+                                    <span class="likes">128</span>
+                                    <span class="comments">31</span>
+                                </div>
+                                <div class="row">
+                                    <span class="date">9-08-2016</span>
+                                    <span class="likes">128</span>
+                                    <span class="comments">31</span>
+                                </div>
+                                <div class="row">
+                                        <div class="upload-date">
+                                            <p>Image upload: 11-04-2016 </p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 image-upload-wrapp">
+                        <div class="img-box">
+                            <img src="./build/img/img-9.png" alt="">
+                            <div class="img-box--info">
+                                <div class="row">
+                                    <span class="day-name">Today</span>
+                                    <span class="likes">128</span>
+                                    <span class="comments">31</span>
+                                </div>
+                                <div class="row">
+                                    <span class="date">9-08-2016</span>
+                                    <span class="likes">128</span>
+                                    <span class="comments">31</span>
+                                </div>
+                                <div class="row">
+                                        <div class="upload-date">
+                                            <p>Image upload: 11-04-2016 </p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="btn-load">
+                            <input type="button" value='load more'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./libs/jquery-3.4.1.min.js"></script>
+    <script src="./libs/bootstrap.min.js"></script>
+    <script src="./libs/bootstrap-datepicker.js"></script>
+    <script src="./build/js/script.js"></script>
+</body>
+
+</html>

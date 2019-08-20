@@ -1,0 +1,40 @@
+@media screen and (max-width: 1200px) {
+  body .image-upload .image-upload-wrapp {
+    margin: 1rem 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  body .image-upload .image-upload-wrapp {
+    margin: 1rem -2.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  body .header .logo,
+  body .header .profile-stats {
+    justify-content: center;
+  }
+  body .header .dates {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  body .header .profile .profile-info {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 525px) {
+  body .header .profile .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .header .profile .datepicker .dates {
+    margin-bottom: 2rem;
+  }
+  body .header .profile .datepicker .dates input {
+    width: 14rem;
+    margin-left: 4rem;
+  }
+  body .header .profile .datepicker .dates label {
+    display: none;
+  }
+}

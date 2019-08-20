@@ -1,0 +1,291 @@
+ @import "../css/fonts.css";
+
+ @primary-light-color: #fff;
+ @primary-dark-color: #262626;
+ @btn-color: #4090db;
+
+ html {
+     font-size: 10px;
+ }
+
+ body {
+     font-size: 16px;
+
+     :active,
+     :hover,
+     :focus {
+         outline: 0;
+         outline-offset: 0;
+     }
+
+     // HEADER
+     .header {
+         background-color: @primary-light-color;
+         box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+
+         .logo {
+             display: flex;
+             justify-content: flex-end;
+         }
+
+         .profile {
+             display: flex;
+             flex-direction: column;
+             height: 100%;
+             justify-content: center;
+
+             .profile-info {
+                 display: flex;
+
+                 .profile-info--name {
+                     h3 {
+                         color: @primary-dark-color;
+                         font-family: "Myriad Pro Regular";
+                         font-size: 2.18em;
+                         font-weight: 400;
+                         letter-spacing: -1.4px;
+                     }
+                 }
+
+                 .profile-info--button {
+                     display: flex;
+                     align-items: center;
+                     margin-left: 2rem;
+
+                     input {
+                         color: @btn-color;
+                         font-family: "Helvetica Neue";
+                         font-size: 0.95em;
+                         font-weight: 400;
+                         letter-spacing: -0.6px;
+                         background-color: transparent;
+                         border: 1px solid @btn-color;
+                         border-radius: 5px;
+
+                         &:hover {
+                             color: darken(@btn-color, 15%);
+                             border: 1px solid darken(@btn-color, 15%);
+                         }
+                     }
+                 }
+             }
+
+             .profile-stats {
+                 display: flex;
+                 flex-direction: row;
+                 margin: 1rem 0;
+
+                 .profile-stats--posts,
+                 .profile-stats--followers,
+                 .profile-stats--following {
+                     color: #3d4044;
+                     font-size: 17px;
+                     font-weight: 400;
+                     line-height: 24px;
+                     font-family: "Proxima Nova Regular";
+                     font-weight: 400;
+                     letter-spacing: -1.34px;
+
+                     &:not(:first-child) {
+                         margin-left: 2rem;
+                     }
+
+                     span {
+                         font-family: "Proxima Nova Rg";
+                         font-weight: 700;
+                         letter-spacing: -0.34px;
+                     }
+                 }
+             }
+
+             .datepicker {
+                 .dates {
+                     display: flex;
+                     align-items: center;
+
+                     input {
+                         margin-left: 2rem;
+                         color: #333333;
+                         font-family: "Helvetica Neue";
+                         font-size: 0.875em;
+                         font-weight: 400;
+                         letter-spacing: 0.35px;
+                         box-shadow: inset 0 1px 1px rgba(1, 1, 1, 0.15);
+                         border: 1px solid #cccccc;
+                         background-color: @primary-light-color;
+                         border-radius: 5px;
+                         width: 17rem;
+                     }
+
+                     label {
+                         margin-left: -.5rem;
+                         font-family: 'Tahoma, sans-serif';
+                     }
+
+                     input#datepickerTo {
+                         margin-left: -3rem;
+                     }
+
+                     .clear-button {
+                         display: block;
+                         padding: 0 1.1rem;
+                         height: 30px;
+                         background: url('../../build/img/icon-close.png') no-repeat center;
+                         position: relative;
+                         left: -47px;
+                         border: 1px solid #cccccc;
+                         background-color: #ebebeb;
+                     }
+
+                     .show-button {
+                         .clear-button;
+                         background: url('../../build/img/calendar-icon.png') no-repeat center;
+                         border: 1px solid #cccccc;
+                         background-color: #ebebeb;
+                         left: -48px;
+                         border-radius: 5px;
+                     }
+                 }
+             }
+         }
+     }
+
+     //SECTION IMG-UPLOAD
+     .image-upload {
+         background-color: #fafafa;
+         display: flex;
+         flex-direction: row;
+         padding-top: 6rem;
+         padding-bottom: 6rem;
+
+         .image-upload-wrapp {
+             margin: 1rem -3rem;
+         }
+
+         .img-box {
+             display: flex;
+             justify-content: center;
+             color: @primary-light-color;
+             position: relative;
+
+             .img-box--info {
+                 position: absolute;
+                 display: flex;
+                 flex-direction: column;
+                 height: 100%;
+                 justify-content: flex-end;
+
+                 .video-item {
+                     display: inline-block;
+
+                     &::before {
+                         content: "";
+                         position: absolute;
+                         display: block;
+                         background: url(../../build/img/video-icon.png) no-repeat center;
+                         width: 38px;
+                         height: 30px;
+                         top: 10px;
+                         right: -30px;
+                     }
+                 }
+
+                 .day-name {
+                     margin-right: 6rem;
+                     display: flex;
+                     align-items: center;
+                     font-family: 'Proxima Nova Semibold';
+
+                 }
+
+                 .day-name_mr {
+                     margin-right: 10.2rem;
+                 }
+
+                 .date {
+                     margin-right: 3rem;
+                     display: flex;
+                     align-items: center;
+                     font-family: 'Proxima Nova Semibold';
+                 }
+
+                 .likes {
+                     display: flex;
+                     align-items: center;
+                     padding: 1rem;
+
+
+                     &::before {
+                         content: "";
+                         display: block;
+                         background: url(../../build/img/heart-icon.png) no-repeat center;
+                         width: 21px;
+                         height: 19px;
+                         margin-right: .5rem;
+                     }
+                 }
+
+                 .comments {
+                     display: flex;
+                     align-items: center;
+
+                     padding: 1rem;
+
+                     &::before {
+                         content: "";
+                         display: block;
+                         background: url(../../build/img/icon-comment.png) no-repeat center;
+                         width: 21px;
+                         height: 19px;
+                         margin-right: .5rem;
+                     }
+                 }
+
+                 .play {
+                     display: flex;
+                     align-items: center;
+                     margin-left: 1rem;
+                     padding: .8rem .3rem;
+
+                     &::before {
+                         content: "";
+                         display: block;
+                         background: url(../../build/img/icon-play.png) no-repeat center;
+                         width: 21px;
+                         height: 19px;
+                         margin-right: .5rem;
+
+                     }
+                 }
+
+                 .upload-date {
+                     width: 100%;
+                     display: flex;
+                     justify-content: center;
+                     margin-top: 7rem;
+                     font-family: 'Proxima Nova Semibold';
+                 }
+             }
+         }
+
+         .btn-load {
+             display: flex;
+             justify-content: center;
+             margin-top: 6rem;
+
+             input {
+                 background-color: transparent;
+                 color: @primary-dark-color;
+                 font-family: "Proxima Nova Semibold";
+                 font-size: .75em;
+                 font-weight: 400;
+                 line-height: 1.5em;
+                 text-transform: uppercase;
+                 border: 1px solid @primary-dark-color;
+                 padding: 1rem 3rem;
+                 border-radius: 100px;
+             }
+         }
+     }
+
+ }

@@ -1,0 +1,245 @@
+@import "../css/fonts.css";
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 16px;
+}
+body :active,
+body :hover,
+body :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+body .header {
+  background-color: #fff;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+}
+body .header .logo {
+  display: flex;
+  justify-content: flex-end;
+}
+body .header .profile {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+body .header .profile .profile-info {
+  display: flex;
+}
+body .header .profile .profile-info .profile-info--name h3 {
+  color: #262626;
+  font-family: "Myriad Pro Regular";
+  font-size: 2.18em;
+  font-weight: 400;
+  letter-spacing: -1.4px;
+}
+body .header .profile .profile-info .profile-info--button {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+body .header .profile .profile-info .profile-info--button input {
+  color: #4090db;
+  font-family: "Helvetica Neue";
+  font-size: 0.95em;
+  font-weight: 400;
+  letter-spacing: -0.6px;
+  background-color: transparent;
+  border: 1px solid #4090db;
+  border-radius: 5px;
+}
+body .header .profile .profile-info .profile-info--button input:hover {
+  color: #216aae;
+  border: 1px solid #216aae;
+}
+body .header .profile .profile-stats {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0;
+}
+body .header .profile .profile-stats .profile-stats--posts,
+body .header .profile .profile-stats .profile-stats--followers,
+body .header .profile .profile-stats .profile-stats--following {
+  color: #3d4044;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: "Proxima Nova Regular";
+  font-weight: 400;
+  letter-spacing: -1.34px;
+}
+body .header .profile .profile-stats .profile-stats--posts:not(:first-child),
+body .header .profile .profile-stats .profile-stats--followers:not(:first-child),
+body .header .profile .profile-stats .profile-stats--following:not(:first-child) {
+  margin-left: 2rem;
+}
+body .header .profile .profile-stats .profile-stats--posts span,
+body .header .profile .profile-stats .profile-stats--followers span,
+body .header .profile .profile-stats .profile-stats--following span {
+  font-family: "Proxima Nova Rg";
+  font-weight: 700;
+  letter-spacing: -0.34px;
+}
+body .header .profile .datepicker .dates {
+  display: flex;
+  align-items: center;
+}
+body .header .profile .datepicker .dates input {
+  margin-left: 2rem;
+  color: #333333;
+  font-family: "Helvetica Neue";
+  font-size: 0.875em;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  box-shadow: inset 0 1px 1px rgba(1, 1, 1, 0.15);
+  border: 1px solid #cccccc;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 17rem;
+}
+body .header .profile .datepicker .dates label {
+  margin-left: -0.5rem;
+  font-family: 'Tahoma, sans-serif';
+}
+body .header .profile .datepicker .dates input#datepickerTo {
+  margin-left: -3rem;
+}
+body .header .profile .datepicker .dates .clear-button {
+  display: block;
+  padding: 0 1.1rem;
+  height: 30px;
+  background: url('../../build/img/icon-close.png') no-repeat center;
+  position: relative;
+  left: -47px;
+  border: 1px solid #cccccc;
+  background-color: #ebebeb;
+}
+body .header .profile .datepicker .dates .show-button {
+  display: block;
+  padding: 0 1.1rem;
+  height: 30px;
+  background: url('../../build/img/icon-close.png') no-repeat center;
+  position: relative;
+  left: -47px;
+  background: url('../../build/img/calendar-icon.png') no-repeat center;
+  border: 1px solid #cccccc;
+  background-color: #ebebeb;
+  left: -48px;
+  border-radius: 5px;
+}
+body .image-upload {
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: row;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+body .image-upload .image-upload-wrapp {
+  margin: 1rem -3rem;
+}
+body .image-upload .img-box {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+}
+body .image-upload .img-box .img-box--info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+}
+body .image-upload .img-box .img-box--info .video-item {
+  display: inline-block;
+}
+body .image-upload .img-box .img-box--info .video-item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background: url(../../build/img/video-icon.png) no-repeat center;
+  width: 38px;
+  height: 30px;
+  top: 10px;
+  right: -30px;
+}
+body .image-upload .img-box .img-box--info .day-name {
+  margin-right: 6rem;
+  display: flex;
+  align-items: center;
+  font-family: 'Proxima Nova Semibold';
+}
+body .image-upload .img-box .img-box--info .day-name_mr {
+  margin-right: 10.2rem;
+}
+body .image-upload .img-box .img-box--info .date {
+  margin-right: 3rem;
+  display: flex;
+  align-items: center;
+  font-family: 'Proxima Nova Semibold';
+}
+body .image-upload .img-box .img-box--info .likes {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+body .image-upload .img-box .img-box--info .likes::before {
+  content: "";
+  display: block;
+  background: url(../../build/img/heart-icon.png) no-repeat center;
+  width: 21px;
+  height: 19px;
+  margin-right: .5rem;
+}
+body .image-upload .img-box .img-box--info .comments {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+body .image-upload .img-box .img-box--info .comments::before {
+  content: "";
+  display: block;
+  background: url(../../build/img/icon-comment.png) no-repeat center;
+  width: 21px;
+  height: 19px;
+  margin-right: .5rem;
+}
+body .image-upload .img-box .img-box--info .play {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+  padding: .8rem .3rem;
+}
+body .image-upload .img-box .img-box--info .play::before {
+  content: "";
+  display: block;
+  background: url(../../build/img/icon-play.png) no-repeat center;
+  width: 21px;
+  height: 19px;
+  margin-right: .5rem;
+}
+body .image-upload .img-box .img-box--info .upload-date {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+  font-family: 'Proxima Nova Semibold';
+}
+body .image-upload .btn-load {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+}
+body .image-upload .btn-load input {
+  background-color: transparent;
+  color: #262626;
+  font-family: "Proxima Nova Semibold";
+  font-size: .75em;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  border: 1px solid #262626;
+  padding: 1rem 3rem;
+  border-radius: 100px;
+}
